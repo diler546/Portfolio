@@ -1,294 +1,405 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Персональный сайт-портфолио программиста Макара Шулера.">
-    <title>Макар Шулер — Программист</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио Макара Шулера — Game Developer, C#, Unity, веб-разработка и программирование.">
+  <meta name="theme-color" content="#08080d">
+  <title>Макар Шулер — Game Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="#home" class="logo" aria-label="Макар Шулер — на главную">
-                <span class="logo-name">Макар Шулер</span>
-                <span class="logo-role">Программист</span>
-            </a>
-            <nav class="main-nav" aria-label="Основная навигация">
-                <ul>
-                    <li><a href="#home">Главная</a></li>
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#skills">Навыки</a></li>
-                    <li><a href="#projects">Проекты</a></li>
-                    <li><a href="#education">Образование</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-mark" aria-hidden="true">◆</span>
+      <span><strong>Макар Шулер</strong><small>GAME DEVELOPER</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#about">Обо мне</a><a href="#skills">Навыки</a><a href="#projects">Проекты</a>
+      <a href="#journey">Journey</a><a href="#quests">Квесты</a><a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero section" id="home" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> SYSTEM ONLINE / BUILD 2026</p>
+      <h1 id="hero-title">Макар Шулер<span>Game Developer</span></h1>
+      <p class="hero-text">Развиваюсь в программировании и создании собственных проектов, превращая идеи в работающие системы. Основной фокус — Unity, C#, игровые механики и практическая разработка.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">Посмотреть проекты <span aria-hidden="true">→</span></a>
+        <a class="button button-secondary" href="#contacts">Связаться <span aria-hidden="true">✦</span></a>
+      </div>
+      <div class="hero-status" aria-label="Системный статус профиля">
+        <div class="status-item"><span>STATUS</span><strong class="accent-green">ONLINE</strong></div>
+        <div class="status-item"><span>MODE</span><strong>LEARNING</strong></div>
+        <div class="status-item"><span>FOCUS</span><strong>UNITY / C#</strong></div>
+      </div>
+    </div>
+    <aside class="hero-panel">
+      <div class="panel-topline"><span>PLAYER PROFILE</span><span class="panel-id">#001</span></div>
+      <div class="profile-media">
+        <img src="img/Avatar/avatar.jpg" alt="Портрет Макара Шулера" width="720" height="900">
+        <span class="media-corner media-corner-tl" aria-hidden="true"></span>
+        <span class="media-corner media-corner-br" aria-hidden="true"></span>
+      </div>
+      <div class="profile-grid">
+        <div><span>ROLE</span><strong>Game Developer</strong></div>
+        <div><span>STARTED</span><strong>2018</strong></div>
+        <div><span>CLASS</span><strong>Builder</strong></div>
+        <div><span>STATUS</span><strong class="accent-green">Currently learning</strong></div>
+      </div>
+      <div class="xp-line" aria-label="Путь в программировании с 2018 года">
+        <div class="xp-meta"><span>XP PATH</span><span>2018 → NOW</span></div>
+        <div class="bar-track"><span style="width:88%"></span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">01</span><div><p class="eyebrow">PROFILE / LOADOUT</p><h2 id="about-title">Обо мне</h2></div></div>
+    <div class="about-grid">
+      <article class="about-card">
+        <div class="about-avatar"><img src="img/Avatar/avatar2.jpg" alt="Макар Шулер — фото профиля" width="720" height="900"></div>
+        <div class="about-copy">
+          <p class="lead">Я программист, которому интереснее всего не просто писать код, а собирать из него работающую систему — игру, приложение или удобный интерфейс.</p>
+          <p>Начал с простых учебных программ, постепенно перешёл к командным проектам, производственной практике и полноценным приложениям. Сейчас учусь в СПБГУПТД по направлению «ИТ-создание цифрового контента», а параллельно продолжаю прокачивать Unity, C#, архитектуру и Game Design.</p>
+          <p>В работе ценю системность, понятную структуру и практический результат: люблю разобрать проблему на части, проверить решение и довести его до рабочего состояния.</p>
         </div>
-    </header>
-    <main>
-        <section id="home" class="hero">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <p class="hero-eyebrow">Привет, меня зовут</p>
-                    <h1 class="hero-title">Макар Шулер</h1>
-                    <p class="hero-role">Программист</p>
-                    <p class="hero-intro">Развиваюсь в программировании и создании собственных проектов, уделяя особое внимание Game Development и практической разработке.</p>
-                    <div class="hero-actions">
-                        <a href="#contacts" class="btn btn-primary">Связаться</a>
-                        <a href="#projects" class="btn btn-secondary">Посмотреть проекты</a>
-                    </div>
-                    <a href="https://github.com/diler546" class="github-link" target="_blank" rel="noopener">GitHub: github.com/diler546 <span aria-hidden="true">↗</span></a>
-                </div>
-                <div class="hero-media">
-                    <div class="hero-photo-frame"><img src="img/avatar.jpg" alt="Макар Шулер" class="hero-photo"></div>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-number">01</span>
-                    <h2 class="section-title">Обо мне</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="about-photo">
-                        <div class="about-photo-frame">
-                            <img src="img/avatar2.jpg" alt="Макар Шулер" class="about-photo-img">
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <p>Я начинающий программист с реальными проектами и живым интересом к технологиям. Учусь, экспериментирую и стараюсь применять новые знания на практике — через собственные и учебные проекты.</p>
-                        <p>Сейчас учусь в СПБГУПТД по направлению «ИТ-создание цифрового контента». До этого получил образование в колледже ПКГХ.</p>
-                        <p>Больше всего меня интересует разработка игр: работаю с Unity и C#, осваиваю Ink для написания диалогов и сюжетных ветвлений, использую Git и GitHub для контроля версий.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section skills">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-number">02</span>
-                    <h2 class="section-title">Навыки</h2>
-                </div>
-                <p class="section-lead">Технологии, с которыми я работаю и которые продолжаю изучать на практике.</p>
-                <div class="skills-grid">
-                    <article class="skill-card">
-                        <div class="skill-card-icon" aria-hidden="true">{&nbsp;}</div>
-                        <h3>Programming</h3>
-                        <ul class="tech-list">
-                            <li>C#</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card">
-                        <div class="skill-card-icon" aria-hidden="true">◈</div>
-                        <h3>Game Development</h3>
-                        <ul class="tech-list">
-                            <li>Unity</li>
-                            <li>Ink</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card">
-                        <div class="skill-card-icon" aria-hidden="true">⌘</div>
-                        <h3>Tools</h3>
-                        <ul class="tech-list">
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Markdown</li>
-                        </ul>
-                    </article>
-                    <article class="skill-card">
-                        <div class="skill-card-icon" aria-hidden="true">⚙</div>
-                        <h3>Technical</h3>
-                        <ul class="tech-list">
-                            <li>Windows</li>
-                            <li>PowerShell</li>
-                            <li>Linux</li>
-                            <li>VPS</li>
-                            <li>Networking</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        <section id="projects" class="section projects">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-number">03</span>
-                    <h2 class="section-title">Проекты</h2>
-                </div>
-                <p class="section-lead">Работы, в которых я применял и закреплял свои навыки на практике.</p>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-visual project-visual-little-prince" role="img" aria-label="Проект The Little Prince">
-                            <span class="project-visual-mark">LP</span>
-                        </div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span class="tag tag-primary">2D platformer / action</span>
-                                <span class="tag">Дипломный проект</span>
-                            </div>
-                            <h3 class="project-title">The Little Prince</h3>
-                            <p class="project-description">Дипломный проект — 2D-платформер с элементами action. Практика создания игровой механики, сцен и работы с Unity.</p>
-                            <ul class="project-tech">
-                                <li>Unity</li>
-                                <li>C#</li>
-                            </ul>
-                            <a href="https://github.com/diler546" class="project-link" target="_blank" rel="noopener">Исходный код на GitHub <span aria-hidden="true">↗</span></a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-visual project-visual-underground" role="img" aria-label="Проект Подпольный бар">
-                            <span class="project-visual-mark">ПБ</span>
-                        </div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span class="tag tag-primary">2D Game</span>
-                                <span class="tag">Командная разработка</span>
-                            </div>
-                            <h3 class="project-title">Подпольный бар</h3>
-                            <p class="project-description">Собственная 2D-игра на Unity, разрабатываемая командой. Диалоги и сюжетные ветвления написаны на Ink.</p>
-                            <ul class="project-tech">
-                                <li>Unity</li>
-                                <li>C#</li>
-                                <li>Ink</li>
-                                <li>Git</li>
-                                <li>GitHub</li>
-                            </ul>
-                            <a href="https://github.com/diler546" class="project-link" target="_blank" rel="noopener">Исходный код на GitHub <span aria-hidden="true">↗</span></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section education">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-number">04</span>
-                    <h2 class="section-title">Образование</h2>
-                </div>
-                <div class="education-grid">
-                    <article class="education-card">
-                        <span class="education-stage">Текущее</span>
-                        <h3>СПБГУПТД</h3>
-                        <p class="education-direction">ИТ-создание цифрового контента</p>
-                    </article>
-                    <article class="education-card">
-                        <span class="education-stage">Предыдущее</span>
-                        <h3>Колледж ПКГХ</h3>
-                        <p class="education-direction">Среднее профессиональное образование</p>
-                    </article>
-                </div>
-            </div>
-        <section id="experience" class="section experience">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-number">05</span>
-                    <h2 class="section-title">Практический опыт</h2>
-                </div>
-                <div class="experience-grid">
-                    <div class="experience-intro">
-                        <p class="experience-lead">Коммерческого опыта работы пока нет, поэтому основное внимание уделяю собственным и учебным проектам и постоянному развитию технических навыков.</p>
-                        <p>Каждый проект — это возможность разобраться в новой технологии глубже, довести идею до рабочего результата и научиться работать с кодом в реальных условиях: от замысла до готовой сборки.</p>
-                    </div>
-                    <ul class="experience-list">
-                        <li>
-                            <span class="experience-list-icon" aria-hidden="true">01</span>
-                            <div>
-                                <h3>Собственные проекты</h3>
-                                <p>Разработка игр с нуля: идея, механики, сборка и доработка.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="experience-list-icon" aria-hidden="true">02</span>
-                            <div>
-                                <h3>Учебные проекты</h3>
-                                <p>Применение знаний на практике в рамках обучения и дипломной работы.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="experience-list-icon" aria-hidden="true">03</span>
-                            <div>
-                                <h3>Game Development</h3>
-                                <p>Unity, C#, Ink — создание игровых сцен, логики и диалогов.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="experience-list-icon" aria-hidden="true">04</span>
-                            <div>
-                                <h3>Изучение через практику</h3>
-                                <p>Освоение новых инструментов и подходов в процессе работы над проектами.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="contacts" class="section contacts">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="section-number">06</span>
-                    <h2 class="section-title">Контакты</h2>
-                </div>
-                <div class="contacts-grid">
-                    <div class="contact-info">
-                        <p class="contact-lead">Открыт к общению по проектам, обучению и сотрудничеству. Свяжитесь удобным способом — отвечу при первой возможности.</p>
-                        <ul class="contact-list">
-                            <li>
-                                <span class="contact-label">Email</span>
-                                <a href="mailto:your@email.com">makar912@mail.ru</a>
-                            </li>
-                            <li>
-                                <span class="contact-label">Telegram</span>
-                                <span class="contact-placeholder">@DILER54</span>
-                            </li>
-                            <li>
-                                <span class="contact-label">GitHub</span>
-                                <a href="https://github.com/diler546" target="_blank" rel="noopener">github.com/diler546</a>
-                            </li>
-                            <li>
-                                <span class="contact-label">Телефон</span>
-                                <span class="contact-placeholder">+7 (981) 828-59-11</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <form class="contact-form" action="#" method="post">
-                        <div class="form-field">
-                            <label for="form-name">Имя</label>
-                            <input type="text" id="form-name" name="name" placeholder="Ваше имя" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="form-email">Email</label>
-                            <input type="email" id="form-email" name="email" placeholder="your@email.com" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="form-message">Сообщение</label>
-                            <textarea id="form-message" name="message" rows="5" placeholder="Напишите ваше сообщение..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-submit">Отправить</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p class="footer-copyright">© 2026 Макар Шулер</p>
-            <nav class="footer-nav" aria-label="Дополнительная навигация">
-                <a href="https://github.com/diler546" target="_blank" rel="noopener">GitHub</a>
-                <a href="mailto:your@email.com">Email</a>
-                <a href="#home">Наверх</a>
-            </nav>
-            <p class="footer-note">Сделано с использованием HTML и CSS</p>
+      </article>
+      <aside class="interest-panel">
+        <div class="card-label"><span aria-hidden="true">◆</span> INTEREST LOADOUT</div>
+        <h3>Что держит меня в фокусе</h3>
+        <div class="interest-list">
+          <a class="interest-item" href="https://steamcommunity.com/id/Diler54/" target="_blank" rel="noopener noreferrer">
+            <span class="interest-icon" aria-hidden="true">🎮</span><span><strong>Игры</strong><small>Steam / gameplay / indie</small></span><span aria-hidden="true">↗</span>
+          </a>
+          <a class="interest-item" href="https://myanimelist.net/animelist/DILER54" target="_blank" rel="noopener noreferrer">
+            <span class="interest-icon" aria-hidden="true">🎬</span><span><strong>Аниме</strong><small>MyAnimeList / watchlist</small></span><span aria-hidden="true">↗</span>
+          </a>
+          <div class="interest-item"><span class="interest-icon" aria-hidden="true">🕹️</span><span><strong>Game Development</strong><small>механики / narrative / Unity</small></span><span class="symbol" aria-hidden="true">◇</span></div>
+          <div class="interest-item"><span class="interest-icon" aria-hidden="true">⚙️</span><span><strong>Tech & Systems</strong><small>Linux / automation / infrastructure</small></span><span class="symbol" aria-hidden="true">◇</span></div>
         </div>
-    </footer>
+      </aside>
+    </div>
+  </div>
+</section>
 
+<section class="section section-alt" id="experience" aria-labelledby="experience-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">02</span><div><p class="eyebrow">FIELD LOG</p><h2 id="experience-title">Практический опыт</h2></div></div>
+    <div class="experience-grid">
+      <article class="experience-main">
+        <div class="field-status"><span class="field-icon" aria-hidden="true">◎</span><div><p class="eyebrow">COMMERCIAL EXPERIENCE</p><h3>Пока не пройден</h3></div></div>
+        <p class="lead">Коммерческого опыта пока нет — основной прокачкой стали учебные, дипломные и личные проекты.</p>
+        <p>Вместо ожидания «идеальной вакансии» я набираю практику там, где можно довести задачу до рабочего результата: пишу программы, участвую в командной разработке, разбираюсь с API, базами данных, Git и игровыми системами.</p>
+      </article>
+      <div class="experience-cards">
+        <article class="mini-card"><span class="mini-card-number">01</span><h3>Производ. практика</h3><p>Производственная практика вышла за рамки обычной вёрстки: полноценный full-stack Phone Book с API, backend, PostgreSQL и frontend.</p></article>
+        <article class="mini-card"><span class="mini-card-number">02</span><h3>Дипломная разработка</h3><p>The Little Prince: игровая логика, системы, статистика и интеграция MySQL.</p></article>
+        <article class="mini-card"><span class="mini-card-number">03</span><h3>Командная работа</h3><p>Работа с задачами, Git/GitHub, распределение работы и техническая координация.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">03</span><div><p class="eyebrow">CHARACTER STATS</p><h2 id="skills-title">Навыки</h2></div></div>
+    <p class="section-intro">Уровни ниже — текущая самооценка. Я специально показываю их как игровой профиль: не «идеальные 100%», а понятный статус навыка и место для прокачки.</p>
+    <div class="stats-legend" aria-label="Легенда уровней">
+      <span class="legend-chip legend-advanced"><b>◆◆◆</b> Advanced</span><span class="legend-chip legend-intermediate"><b>◆◆◇</b> Intermediate</span><span class="legend-chip legend-basic"><b>◆◇◇</b> Basic</span>
+    </div>
+    <div class="skill-mode">
+      <input class="sr-radio" type="radio" name="skill-mode" id="hard-mode" checked><label class="mode-tab" for="hard-mode">HARD SKILLS</label>
+      <input class="sr-radio" type="radio" name="skill-mode" id="soft-mode"><label class="mode-tab" for="soft-mode">SOFT SKILLS</label>
+
+      <div class="skill-panel skill-panel-hard">
+        <div class="skill-level-column">
+          <div class="level-heading level-advanced-heading"><span>◆◆◆</span><div><strong>Advanced</strong><small>CORE LOADOUT</small></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>C#</strong><span>ADV</span></div><div class="skill-track"><span style="width:92%"></span></div><small>Основной язык для игровых и прикладных задач.</small></div>
+          <div class="skill-card"><div class="skill-top"><strong>Unity</strong><span>ADV</span></div><div class="skill-track"><span style="width:90%"></span></div><small>Создание сцен, механик и логики игры.</small></div>
+          <div class="skill-card"><div class="skill-top"><strong>GameDev</strong><span>ADV</span></div><div class="skill-track"><span style="width:88%"></span></div><small>Игровые механики, прототипирование и практическая разработка.</small></div>
+          <div class="skill-card"><div class="skill-top"><strong>Obsidian</strong><span>ADV</span></div><div class="skill-track"><span style="width:84%"></span></div><small>Систематизация проектов, знаний и рабочих процессов.</small></div>
+          <div class="skill-card"><div class="skill-top"><strong>Markdown</strong><span>ADV</span></div><div class="skill-track"><span style="width:86%"></span></div><small>Документация и структурированное хранение информации.</small></div>
+        </div>
+        <div class="skill-level-column">
+          <div class="level-heading level-intermediate-heading"><span>◆◆◇</span><div><strong>Intermediate</strong><small>ACTIVE LOADOUT</small></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>C++</strong><span>INT</span></div><div class="skill-track"><span style="width:68%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>Kotlin</strong><span>INT</span></div><div class="skill-track"><span style="width:58%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>Windows Forms</strong><span>INT</span></div><div class="skill-track"><span style="width:72%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>Ink</strong><span>INT</span></div><div class="skill-track"><span style="width:60%"></span></div><small>Диалоги и сюжетные ветвления в GameDev-проектах.</small></div>
+          <div class="skill-card"><div class="skill-top"><strong>Networks</strong><span>INT</span></div><div class="skill-track"><span style="width:67%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>Git</strong><span>INT</span></div><div class="skill-track"><span style="width:70%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>HTML</strong><span>INT</span></div><div class="skill-track"><span style="width:72%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>CSS</strong><span>INT</span></div><div class="skill-track"><span style="width:73%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>JS</strong><span>INT</span></div><div class="skill-track"><span style="width:64%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>Linux</strong><span>INT</span></div><div class="skill-track"><span style="width:69%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>VPS</strong><span>INT</span></div><div class="skill-track"><span style="width:65%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>DevOps</strong><span>INT</span></div><div class="skill-track"><span style="width:58%"></span></div></div>
+        </div>
+        <div class="skill-level-column">
+          <div class="level-heading level-basic-heading"><span>◆◇◇</span><div><strong>Basic</strong><small>UPCOMING UPGRADE</small></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>Python</strong><span>BSC</span></div><div class="skill-track"><span style="width:42%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>ASM</strong><span>BSC</span></div><div class="skill-track"><span style="width:34%"></span></div></div>
+          <div class="skill-card"><div class="skill-top"><strong>Cybersecurity</strong><span>BSC</span></div><div class="skill-track"><span style="width:38%"></span></div></div>
+        </div>
+      </div>
+
+      <div class="skill-panel skill-panel-soft">
+        <div class="skill-level-column">
+          <div class="level-heading level-advanced-heading"><span>◆◆◆</span><div><strong>Advanced</strong><small>CORE TRAITS</small></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Системность</strong><span>ADV</span></div><div class="skill-track"><span style="width:90%"></span></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Troubleshooting</strong><span>ADV</span></div><div class="skill-track"><span style="width:88%"></span></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Самообучение</strong><span>ADV</span></div><div class="skill-track"><span style="width:91%"></span></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Лидерство</strong><span>ADV</span></div><div class="skill-track"><span style="width:82%"></span></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Автоматизация</strong><span>ADV</span></div><div class="skill-track"><span style="width:80%"></span></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Практичность</strong><span>ADV</span></div><div class="skill-track"><span style="width:86%"></span></div></div>
+        </div>
+        <div class="skill-level-column">
+          <div class="level-heading level-intermediate-heading"><span>◆◆◇</span><div><strong>Intermediate</strong><small>GROWING TRAITS</small></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Итеративность</strong><span>INT</span></div><div class="skill-track"><span style="width:76%"></span></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Минимализм</strong><span>INT</span></div><div class="skill-track"><span style="width:74%"></span></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Адаптивность</strong><span>INT</span></div><div class="skill-track"><span style="width:79%"></span></div></div>
+          <div class="skill-card soft-card"><div class="skill-top"><strong>Документирование</strong><span>INT</span></div><div class="skill-track"><span style="width:70%"></span></div></div>
+        </div>
+        <div class="skill-note"><span class="note-icon" aria-hidden="true">✦</span><div><strong>Passive trait unlocked</strong><p>Стараюсь превращать рабочий хаос в понятную систему: от структуры проекта до документации.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">04</span><div><p class="eyebrow">MISSION SELECT</p><h2 id="projects-title">Проекты</h2></div></div>
+    <p class="section-intro">Не просто «вот скриншот». Каждый проект показывает задачу, системы, стек и мой вклад. Галереи работают без JavaScript: горизонтальная лента, scroll-snap и нативные HTML-механики.</p>
+
+    <article class="project-feature">
+      <div class="project-feature-head"><div><p class="project-code">MISSION 01 / DIPLOMA</p><h3>The Little Prince</h3><p class="project-subtitle">2D PLATFORMER / UNITY / C# / MYSQL</p></div><span class="mission-badge">LEGENDARY</span></div>
+      <div class="project-grid">
+        <div class="project-gallery">
+          <div class="gallery-header"><span>SCREEN REEL</span><span>4 FRAMES</span></div>
+          <div class="gallery-track" aria-label="Галерея The Little Prince">
+            <figure class="gallery-slide" id="lp-screen-01"><img src="img/Projects/The Little Prince/The Little Prince.gif" alt="The Little Prince — игровой процесс, кадр 1" width="1280" height="720" loading="lazy"></figure>
+            <figure class="gallery-slide" id="lp-screen-02"><img src="img/Projects/The Little Prince/The Little Prince2.gif" alt="The Little Prince — игровой процесс, кадр 2" width="1280" height="720" loading="lazy"></figure>
+            <figure class="gallery-slide" id="lp-screen-03"><img src="img/Projects/The Little Prince/The Little Prince3.gif" alt="The Little Prince — игровой процесс, кадр 3" width="1280" height="720" loading="lazy"></figure>
+            <figure class="gallery-slide" id="lp-screen-04"><img src="img/Projects/The Little Prince/The Little Prince4.gif" alt="The Little Prince — игровой процесс, кадр 4" width="1280" height="720" loading="lazy"></figure>
+          </div>
+          <nav class="gallery-nav gallery-nav-large" aria-label="Переход по кадрам The Little Prince"><a href="#lp-screen-01">FRAME 01</a><a href="#lp-screen-02">FRAME 02</a><a href="#lp-screen-03">FRAME 03</a><a href="#lp-screen-04">FRAME 04</a></nav>
+        </div>
+        <div class="project-info">
+          <div class="project-meta"><span>OBJECTIVE</span><strong>Добраться из точки A в точку B</strong></div>
+          <p>Дипломный проект — 2D-платформер, в котором игрок проходит уровень от старта до выхода, используя окружение и игровые механики по пути.</p>
+          <p>В проекте реализованы здоровье и система урона, временные усиления, враги, порталы, воздушные потоки, ловушки и препятствия. Для сбора статистики подключена MySQL-база данных из трёх таблиц.</p>
+          <div class="system-list"><span>♥ HEALTH</span><span>⚡ BOOSTS</span><span>☠ ENEMIES</span><span>↗ PORTALS</span><span>≈ AIRFLOW</span><span>⌁ TRAPS</span><span>▣ STATS + MYSQL</span></div>
+          <details class="project-details"><summary>Что было сделано мной</summary><div class="details-body"><p>Основная логика платформера, игровые системы, обработка взаимодействий, элементы урона и работа со статистикой.</p></div></details>
+          <a class="text-link" href="https://github.com/diler546" target="_blank" rel="noopener noreferrer">Открыть GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </article>
+
+    <div class="project-grid-list">
+      <article class="project-card">
+        <div class="project-card-head"><div><span class="project-code">MISSION 02 / PRACTICE</span><h3>Phone Book</h3></div><span class="project-type">WEB / API</span></div>
+        <div class="mini-gallery" aria-label="Галерея Phone Book">
+          <figure><img src="img/Projects/Phone Book/Phone Book.png" alt="Phone Book — главный экран" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Phone Book/Phone Book2.png" alt="Phone Book — список сотрудников" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Phone Book/Phone Book3.png" alt="Phone Book — форма сотрудника" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Phone Book/Phone Book4.png" alt="Phone Book — работа с данными" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Phone Book/Phone Book5.png" alt="Phone Book — интерфейс" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Phone Book/Phone Book6.png" alt="Phone Book — дополнительные экраны" width="1280" height="720" loading="lazy"></figure>
+        </div>
+        <div class="project-card-body"><p class="project-subtitle">FULL-STACK DIRECTORY</p><p>Итог производственной практики. Полноценный full-stack сайт-справочник сотрудников: backend, собственный API, PostgreSQL и frontend на HTML/CSS/JS.</p><div class="tag-row"><span>API</span><span>PostgreSQL</span><span>HTML</span><span>CSS</span><span>JS</span></div><ul class="feature-list"><li>CRUD-запросы и работа с данными</li><li>Backend + база данных</li><li>Frontend для поиска и просмотра сотрудников</li></ul><a class="text-link" href="https://github.com/diler546" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-head"><div><span class="project-code">MISSION 03 / DESKTOP</span><h3>Windows Forms</h3></div><span class="project-type">DESKTOP</span></div>
+        <div class="mini-gallery" aria-label="Галерея Windows Forms">
+          <figure><img src="img/Projects/Windows Forms/Windows Forms.png" alt="Windows Forms — главная форма" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Windows Forms/Windows Forms2.png" alt="Windows Forms — список учеников" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Windows Forms/Windows Forms3.png" alt="Windows Forms — данные ученика" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Windows Forms/Windows Forms4.png" alt="Windows Forms — история тренировок" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Windows Forms/Windows Forms5.png" alt="Windows Forms — дополнительные функции" width="1280" height="720" loading="lazy"></figure>
+        </div>
+        <div class="project-card-body"><p class="project-subtitle">BOXING CLUB MANAGER</p><p>Проект для подготовки к демонстрационному экзамену. Программа предназначена для ведения учёта спортсменов, их данных и истории тренировок.</p><div class="tag-row"><span>C#</span><span>Windows Forms</span><span>Desktop</span></div><ul class="feature-list"><li>Главная форма с основной информацией</li><li>Добавление и редактирование учеников</li><li>История тренировок</li></ul><a class="text-link" href="https://github.com/diler546" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-head"><div><span class="project-code">MISSION 04 / WEB DESIGN</span><h3>Glitch Shop</h3></div><span class="project-type">WEB / UI</span></div>
+        <div class="mini-gallery" aria-label="Галерея Glitch Shop">
+          <figure><img src="img/Projects/Glitch Shop/Glitch Shop.png" alt="Glitch Shop — главная страница магазина игр" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Glitch Shop/Glitch Shop2.png" alt="Glitch Shop — каталог" width="1280" height="720" loading="lazy"></figure>
+          <figure><img src="img/Projects/Glitch Shop/Glitch Shop3.png" alt="Glitch Shop — дополнительные элементы интерфейса" width="1280" height="720" loading="lazy"></figure>
+        </div>
+        <div class="project-card-body"><p class="project-subtitle">GAME STORE UI</p><p>Учебный проект по web design — сайт магазина по продаже игр. Основной акцент сделан на визуальной подаче, структуре страниц и интерактивных элементах.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JS</span><span>Bootstrap</span></div><ul class="feature-list"><li>Полноценная визуальная вёрстка</li><li>Слайдер и интерактивные элементы</li><li>Bootstrap-компоненты</li></ul><a class="text-link" href="https://github.com/diler546" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="journey" aria-labelledby="journey-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">05</span><div><p class="eyebrow">CAMPAIGN LOG</p><h2 id="journey-title">Journey</h2></div></div>
+    <p class="section-intro">Путь от первой программы до текущего этапа обучения. Выберите точку на шкале — большой экран выше переключится на соответствующий этап.</p>
+    <div class="journey">
+      <input class="sr-radio" type="radio" name="journey-point" id="journey-2018" checked>
+      <input class="sr-radio" type="radio" name="journey-point" id="journey-college">
+      <input class="sr-radio" type="radio" name="journey-point" id="journey-diploma">
+      <input class="sr-radio" type="radio" name="journey-point" id="journey-university">
+
+      <div class="journey-stage">
+        <article class="journey-panel journey-panel-2018">
+          <img src="img/Journey/First point/code.webp" alt="Первая программа на C#" width="1280" height="720" loading="lazy">
+          <div class="journey-overlay">
+            <p class="journey-date">2018</p><h3>Первая точка</h3>
+            <p>В 2018 я впервые всерьёз заинтересовался программированием. Начал с C# — первой программой стал вычислитель дискриминанта. Код был простым, но именно тогда появилась большая цель: когда-нибудь создавать собственные игры, а не только играть в них.</p>
+            <details><summary class="button button-secondary">Посмотреть материалы</summary><div class="journey-detail-gallery">
+              <figure><img src="img/Journey/First point/code.webp" alt="Код первой программы на C#" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/First point/code2.jpg" alt="Ранние заметки и код" width="1280" height="720" loading="lazy"></figure>
+            </div></details>
+          </div>
+        </article>
+
+        <article class="journey-panel journey-panel-college">
+          <img src="img/Journey/Сollege/College.webp" alt="Колледж — этап обучения программированию" width="1280" height="720" loading="lazy">
+          <div class="journey-overlay">
+            <p class="journey-date">2021 — 2025</p><h3>Колледж</h3>
+            <p>В колледже программирование перестало быть одиночным экспериментом и превратилось в полноценную практику. Я встретил много сильных и заряженных людей, начал работать в команде, делать серьёзные проекты, проходить практику и собирать дипломный проект. Именно здесь появилось понимание, что хороший результат — это не только код, но и люди, процессы и способность довести задачу до конца.</p>
+            <details><summary class="button button-secondary">Посмотреть материалы</summary><div class="journey-detail-gallery">
+              <figure><img src="img/Journey/Сollege/College.webp" alt="Колледж — фото 1" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/Сollege/College2.jpg" alt="Колледж — фото 2" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/Сollege/College3.jpg" alt="Колледж — фото 3" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/Сollege/College4.jpg" alt="Колледж — фото 4" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/Сollege/College5.jpg" alt="Колледж — фото 5" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/Сollege/College6.jpg" alt="Колледж — фото 6" width="1280" height="720" loading="lazy"></figure>
+            </div></details>
+          </div>
+        </article>
+
+        <article class="journey-panel journey-panel-diploma">
+          <img src="img/Journey/The Little Prince/The Little Prince.png" alt="The Little Prince — дипломный проект" width="1280" height="720" loading="lazy">
+          <div class="journey-overlay">
+            <p class="journey-date">2025</p><h3>Диплом</h3>
+            <p>Финальный проект колледжа — 2D-платформер The Little Prince. Я защитил его на отлично, и только после защиты по-настоящему почувствовал, насколько быстро прошли четыре года. В этот же период готовился к ЕГЭ, чтобы продолжить обучение уже в университете.</p>
+            <details><summary class="button button-secondary">Посмотреть материалы</summary><div class="journey-detail-gallery">
+              <figure><img src="img/Journey/The Little Prince/The Little Prince.png" alt="The Little Prince — кадр 1" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/The Little Prince/The Little Prince2.png" alt="The Little Prince — кадр 2" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/The Little Prince/The Little Prince3.png" alt="The Little Prince — кадр 3" width="1280" height="720" loading="lazy"></figure>
+            </div></details>
+          </div>
+        </article>
+
+        <article class="journey-panel journey-panel-university">
+          <img src="img/Journey/University/University.jpg" alt="СПБГУПТД — университет" width="1280" height="720" loading="lazy">
+          <div class="journey-overlay">
+            <p class="journey-date">2025 → NOW</p><h3>СПБГУПТД</h3>
+            <p>Поступил в СПБГУПТД и начал новый этап. Старый опыт заметно облегчает обучение: многие вещи уже знакомы, поэтому можно глубже копать в то, что действительно интересно. Появились новые знакомые, новые задачи и больше пространства для самостоятельных проектов. Правда, один старый босс всё ещё на месте — лень. С ним пока продолжается бесконечный рейд.</p>
+            <details><summary class="button button-secondary">Посмотреть материалы</summary><div class="journey-detail-gallery">
+              <figure><img src="img/Journey/University/University.jpg" alt="Университет — фото 1" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/University/University2.jpg" alt="Университет — фото 2" width="1280" height="720" loading="lazy"></figure>
+              <figure><img src="img/Journey/University/University3.jpg" alt="Университет — фото 3" width="1280" height="720" loading="lazy"></figure>
+            </div></details>
+          </div>
+        </article>
+      </div>
+
+      <div class="journey-timeline" aria-label="Годы обучения и развития">
+        <div class="timeline-line" aria-hidden="true"></div>
+        <label class="timeline-point timeline-2018" for="journey-2018"><span class="timeline-year">2018</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-caption">START</span></label>
+        <label class="timeline-point timeline-college" for="journey-college"><span class="timeline-year">2021–25</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-caption">COLLEGE</span></label>
+        <label class="timeline-point timeline-diploma" for="journey-diploma"><span class="timeline-year">2025</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-caption">DIPLOMA</span></label>
+        <label class="timeline-point timeline-university" for="journey-university"><span class="timeline-year">2025 →</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-caption">UNIVERSITY</span></label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="education" aria-labelledby="education-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">06</span><div><p class="eyebrow">ACADEMIC LOADOUT</p><h2 id="education-title">Образование</h2></div></div>
+    <div class="education-grid">
+      <article class="education-card education-current"><span class="education-status">CURRENT</span><h3>СПБГУПТД</h3><p class="education-specialty">ИТ-создание цифрового контента</p><p>Продолжаю обучение и усиливаю практические навыки в программировании, цифровом контенте и разработке проектов.</p></article>
+      <article class="education-card"><span class="education-status">COMPLETED</span><h3>Колледж ПКГХ</h3><p class="education-specialty">Среднее профессиональное образование</p><p>Основная база по программированию, первые командные проекты, практика и дипломная разработка.</p></article>
+      <article class="education-card"><span class="education-status">CERTIFICATION SLOT</span><h3>Курсы и сертификаты</h3><p class="education-specialty">В процессе накопления</p><p>Сейчас основной акцент — на практических проектах и учебных задачах, которые можно показать в портфолио.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="achievements" aria-labelledby="achievements-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">07</span><div><p class="eyebrow">HALL OF FAME</p><h2 id="achievements-title">Достижения</h2></div></div>
+    <div class="achievements-grid">
+      <details class="achievement-card rarity-rare"><summary><span class="achievement-icon" aria-hidden="true">◆</span><span><small>RARE / UNLOCKED</small><strong>FIRST CODE</strong></span><span class="achievement-arrow" aria-hidden="true">+</span></summary><div class="achievement-body"><p>Начал программировать в 2018 году. С первой программы на C# начался путь от учебных экспериментов к полноценным проектам.</p></div></details>
+      <details class="achievement-card rarity-epic"><summary><span class="achievement-icon" aria-hidden="true">✦</span><span><small>EPIC / UNLOCKED</small><strong>DIPLOMA COMPLETE</strong></span><span class="achievement-arrow" aria-hidden="true">+</span></summary><div class="achievement-body"><p>The Little Prince — дипломный 2D-платформер, успешно защищённый на отлично.</p></div></details>
+      <details class="achievement-card rarity-legendary"><summary><span class="achievement-icon" aria-hidden="true">★</span><span><small>LEGENDARY / UNLOCKED</small><strong>GAME DEVELOPER</strong></span><span class="achievement-arrow" aria-hidden="true">+</span></summary><div class="achievement-body"><p>Игровая разработка стала основным направлением: Unity, C#, игровые механики и системный подход к созданию игр.</p></div></details>
+      <details class="achievement-card rarity-epic"><summary><span class="achievement-icon" aria-hidden="true">⬢</span><span><small>EPIC / UNLOCKED</small><strong>TEAM LEAD</strong></span><span class="achievement-arrow" aria-hidden="true">+</span></summary><div class="achievement-body"><p>Опыт командной разработки: задачи, распределение работы, координация, Git/GitHub и технические решения.</p></div></details>
+      <details class="achievement-card rarity-rare"><summary><span class="achievement-icon" aria-hidden="true">⌘</span><span><small>RARE / UNLOCKED</small><strong>GITHUB USER</strong></span><span class="achievement-arrow" aria-hidden="true">+</span></summary><div class="achievement-body"><p>Использую Git и GitHub как часть рабочего процесса: хранение кода, история изменений и совместная разработка.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="quests" aria-labelledby="quests-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">08</span><div><p class="eyebrow">ACTIVE QUESTS</p><h2 id="quests-title">Current Quests</h2></div></div>
+    <div class="quest-board">
+      <article class="quest-card main-quest"><div class="quest-type"><span aria-hidden="true">◆</span> MAIN QUEST</div><div class="quest-body"><div><span class="quest-code">QUEST 01</span><h3>Advanced C#</h3><p>Углубить работу с архитектурой, паттернами и более сложной организацией кода.</p></div><div class="quest-progress"><div class="quest-meta"><span>PROGRESS</span><span>80%</span></div><div class="bar-track"><span style="width:80%"></span></div></div></div><div class="quest-reward"><span>REWARD</span><strong>+ C# XP / ARCHITECT SKILL</strong></div></article>
+      <article class="quest-card main-quest"><div class="quest-type"><span aria-hidden="true">◆</span> MAIN QUEST</div><div class="quest-body"><div><span class="quest-code">QUEST 02</span><h3>Unity Architecture</h3><p>Научиться строить игровые системы так, чтобы проект было проще расширять и поддерживать.</p></div><div class="quest-progress"><div class="quest-meta"><span>PROGRESS</span><span>70%</span></div><div class="bar-track"><span style="width:70%"></span></div></div></div><div class="quest-reward"><span>REWARD</span><strong>+ SYSTEM DESIGN XP</strong></div></article>
+      <article class="quest-card side-quest"><div class="quest-type"><span aria-hidden="true">◇</span> SIDE QUEST</div><div class="quest-body"><div><span class="quest-code">QUEST 03</span><h3>Game Design</h3><p>Развивать понимание игрового цикла, механик, баланса и того, как идеи превращаются в игровой опыт.</p></div><div class="quest-progress"><div class="quest-meta"><span>PROGRESS</span><span>60%</span></div><div class="bar-track"><span style="width:60%"></span></div></div></div><div class="quest-reward"><span>REWARD</span><strong>+ DESIGN XP / NEW IDEAS</strong></div></article>
+      <article class="quest-card side-quest"><div class="quest-type"><span aria-hidden="true">◇</span> SIDE QUEST</div><div class="quest-body"><div><span class="quest-code">QUEST 04</span><h3>Linux / DevOps</h3><p>Укреплять навыки работы с Linux, VPS, сервисами и автоматизацией инфраструктуры.</p></div><div class="quest-progress"><div class="quest-meta"><span>PROGRESS</span><span>55%</span></div><div class="bar-track"><span style="width:55%"></span></div></div></div><div class="quest-reward"><span>REWARD</span><strong>+ SYSTEM ACCESS / AUTOMATION</strong></div></article>
+      <article class="quest-card bonus-quest"><div class="quest-type"><span aria-hidden="true">✦</span> BONUS QUEST</div><div class="quest-body"><div><span class="quest-code">QUEST 05</span><h3>English</h3><p>Расширять технический словарь и увереннее работать с англоязычной документацией.</p></div><div class="quest-progress"><div class="quest-meta"><span>PROGRESS</span><span>60%</span></div><div class="bar-track"><span style="width:60%"></span></div></div></div><div class="quest-reward"><span>REWARD</span><strong>+ DOC XP / GLOBAL ACCESS</strong></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contacts" aria-labelledby="contacts-title">
+  <div class="container">
+    <div class="section-heading"><span class="section-number">09</span><div><p class="eyebrow">OPEN CHANNEL</p><h2 id="contacts-title">Контакты</h2></div></div>
+    <div class="contact-grid">
+      <div class="contact-panel">
+  <div class="contact-identity">
+    <div class="contact-avatar"><img src="img/Avatar/avatar3.jpg" alt="Макар Шулер — фото для блока контактов" width="720" height="900"></div>
+    <div><p class="eyebrow">PLAYER CHANNEL</p><p class="lead">Есть проект, учебная задача или просто идея? Канал связи открыт.</p></div>
+  </div>
+  <div class="contact-list">
+        <a href="mailto:makar912@mail.ru"><span>Email</span><strong>makar912@mail.ru</strong></a>
+        <a href="https://t.me/DILER54" target="_blank" rel="noopener noreferrer"><span>Telegram</span><strong>@DILER54</strong></a>
+        <a href="https://github.com/diler546" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>github.com/diler546</strong></a>
+        <a href="tel:+79818285911"><span>Телефон</span><strong>+7 (981) 828-59-11</strong></a>
+      </div></div>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row"><div class="field"><label for="name">Имя</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="your@email.com" required></div></div>
+        <div class="field"><label for="message">Сообщение</label><textarea id="message" name="message" rows="7" placeholder="Расскажите, с чем обращаетесь" required></textarea></div>
+        <button class="button button-primary" type="submit">Отправить сообщение <span aria-hidden="true">↗</span></button>
+        <p class="form-note">Форма учебная: без backend, с нативной HTML-валидацией.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section final-cta" aria-labelledby="cta-title">
+  <div class="container"><div class="cta-card">
+    <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> READY STATE</p>
+    <h2 id="cta-title">READY TO BUILD SOMETHING?</h2>
+    <p>Game Developer · Unity · C# · Game Design · Practical Development</p>
+    <div class="hero-actions"><a class="button button-primary" href="#projects">View projects</a><a class="button button-secondary" href="#contacts">Contact me</a></div>
+  </div></div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div><strong>Макар Шулер</strong><span>GAME DEVELOPER / HTML + CSS PORTFOLIO</span></div>
+    <div class="footer-links"><a href="mailto:makar912@mail.ru">Email</a><a href="https://t.me/DILER54" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://github.com/diler546" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    <p>© 2026 Макар Шулер</p>
+  </div>
+</footer>
 </body>
 </html>
-
